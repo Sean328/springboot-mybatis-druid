@@ -5,7 +5,7 @@ package com.sean.mybatis.observer;
  *
  * @desc
  */
-public interface LoginInterface {
+public interface ObserverInterface {
 
 	void onSuccess(Object object);
 }

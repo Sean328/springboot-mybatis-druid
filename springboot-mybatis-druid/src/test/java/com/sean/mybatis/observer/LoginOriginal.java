@@ -10,14 +10,14 @@ import java.util.List;
  */
 public class LoginOriginal{
 
-	private List<LoginInterface> loginInterfaces = new ArrayList<>();
+	private List<ObserverInterface> loginInterfaces = new ArrayList<>();
 
-	public void addObject(LoginInterface addObject){
+	public void addObject(ObserverInterface addObject){
 		loginInterfaces.add(addObject);
 	}
 
 	private void loginSuccess(){
-		for (LoginInterface loginInterface : loginInterfaces) {
+		for (ObserverInterface loginInterface : loginInterfaces) {
 			loginInterface.onSuccess(this);
 		}
 	}

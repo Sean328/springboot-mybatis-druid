@@ -5,7 +5,7 @@ package com.sean.mybatis.observer;
  *
  * @desc
  */
-public class ObserverOriginal implements LoginInterface{
+public class ObserverOriginal implements ObserverInterface{
 
 	public ObserverOriginal(LoginOriginal loginOriginal){
 		loginOriginal.addObject(this);
